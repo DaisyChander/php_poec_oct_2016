@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+    var_dump($_POST);    
 
     if (empty($_POST['title'])) {
         header('Location: add_book.php');
@@ -19,7 +21,4 @@
     var_dump($query->errorInfo());
     var_dump($query);
     var_dump($result);
-
-
-    header('Location: add_book.php');
 ?>
